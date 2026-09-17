@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
+  <title id="title">PocketShark mark</title>
+  <desc id="desc">A cyan shark silhouette over a dark square with a mint underline.</desc>
+  <rect x="4" y="4" width="40" height="40" rx="9" fill="#0D151E"/>
+  <path fill="#37D9FF" d="M7 30c8-1 12-8 16-18 5 5 7 12 7 17 4-3 8-4 12-2-4 4-7 7-12 9-8 3-17 1-23-6Z"/>
+  <circle cx="25" cy="25" r="2" fill="#05080C"/>
+  <path d="M9 37h30" fill="none" stroke="#50E3A4" stroke-width="2" stroke-linecap="round"/>
+</svg>

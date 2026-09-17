@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08111a">
+  <meta name="description" content="PocketShark is a rootless Android packet inspector for local, on-device network visibility, packet detail, and PCAP workflows.">
+  <title>PocketShark — Network visibility in your pocket</title>
+  <link rel="icon" href="assets/pocketshark-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="PocketShark home">
+        <img src="assets/pocketshark-mark.svg" alt="" width="38" height="38">
+        <span>Pocket<span class="brand-accent">Shark</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary" data-nav>
+        <a href="#features">Features</a>
+        <a href="#workflow">How it works</a>
+        <a href="#boundaries">Boundaries</a>
+        <a href="https://github.com/Black7i77/PocketShark-Android" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="nav-cta" href="https://github.com/Black7i77/PocketShark-Android/releases" target="_blank" rel="noreferrer">Get APK</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="network-grid" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Android network inspection · local by design</div>
+          <h1 aria-label="Network visibility in your pocket.">Network visibility<br><span>in your pocket.</span></h1>
+          <p class="hero-lead">PocketShark brings packet-level visibility to Android using the approved <strong>Android VpnService</strong> interface — no root required, no cloud upload, and no packet modification.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/Black7i77/PocketShark-Android/releases" target="_blank" rel="noreferrer">Get PocketShark</a>
+            <a class="button button-secondary" href="https://github.com/Black7i77/PocketShark-Android" target="_blank" rel="noreferrer">View source</a>
+          </div>
+          <div class="hero-meta" aria-label="PocketShark highlights">
+            <span>ROOTLESS</span>
+            <span>LOCAL ANALYSIS</span>
+            <span>PCAP READY</span>
+            <span>v0.2.0</span>
+          </div>
+        </div>
+
+        <div class="phone-stage reveal" aria-label="Stylized preview of the PocketShark packet list">
+          <div class="orb orb-one" aria-hidden="true"></div>
+          <div class="orb orb-two" aria-hidden="true"></div>
+          <div class="phone">
+            <div class="phone-topbar">
+              <div class="phone-brand">
+                <img src="assets/pocketshark-mark.svg" alt="" width="26" height="26">
+                <div><strong>PocketShark</strong><small>LIVE CAPTURE</small></div>
+              </div>
+              <span class="capture-pill"><i></i> ACTIVE</span>
+            </div>
+            <div class="packet-summary">
+              <div><strong>248</strong><span>Packets</span></div>
+              <div><strong>14</strong><span>Endpoints</span></div>
+              <div><strong>6</strong><span>Protocols</span></div>
+            </div>
+            <div class="filter-row" aria-hidden="true">
+              <span class="filter active">ALL</span><span class="filter">TCP</span><span class="filter">DNS</span><span class="filter">QUIC</span>
+            </div>
+            <div class="packet-list" aria-hidden="true">
+              <div class="packet-row"><span class="direction out">OUT</span><span class="packet-main"><b>TCP</b><small>10.88.0.2 → 142.250.70.14:443</small></span><span class="bytes">1.4 KB</span></div>
+              <div class="packet-row"><span class="direction dns">DNS</span><span class="packet-main"><b>DNS</b><small>Query · api.github.com</small></span><span class="bytes">78 B</span></div>
+              <div class="packet-row"><span class="direction in">IN</span><span class="packet-main"><b>UDP</b><small>8.8.8.8:53 → 10.88.0.2</small></span><span class="bytes">126 B</span></div>
+              <div class="packet-row"><span class="direction quic">QUIC</span><span class="packet-main"><b>QUIC</b><small>Encrypted application traffic</small></span><span class="bytes">1.2 KB</span></div>
+              <div class="packet-row"><span class="direction out">OUT</span><span class="packet-main"><b>TCP</b><small>10.88.0.2 → 140.82.121.4:443</small></span><span class="bytes">912 B</span></div>
+            </div>
+            <div class="phone-footer"><span>PACKETS</span><span>STATS</span><span>PCAP</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Product facts">
+      <div class="shell trust-grid">
+        <div><span class="trust-icon">01</span><div><strong>No root</strong><small>VpnService capture</small></div></div>
+        <div><span class="trust-icon">02</span><div><strong>On-device</strong><small>No cloud upload</small></div></div>
+        <div><span class="trust-icon">03</span><div><strong>PCAP workflow</strong><small>Import + export</small></div></div>
+        <div><span class="trust-icon">04</span><div><strong>Open source</strong><small>Inspect the code</small></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <span class="kicker">CAPTURE · INSPECT · UNDERSTAND</span>
+          <h2>A focused packet workspace for Android.</h2>
+          <p>Built for troubleshooting, learning, and inspecting traffic from your own phone without turning the app into an attack toolkit.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-code">CAP</span>
+            <h3>Live IPv4 capture</h3>
+            <p>Observe traffic from apps on your phone through Android's local VPN interface without rooting the device.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-code">PRT</span>
+            <h3>Protocol visibility</h3>
+            <p>Identify TCP, UDP, DNS, QUIC, plus ICMP when working with imported captures.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-code">HEX</span>
+            <h3>Packet + hex detail</h3>
+            <p>Review endpoints, direction, protocol, length, summaries, payload previews, and hex/ASCII detail.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-code">PCP</span>
+            <h3>PCAP import & export</h3>
+            <p>Import classic PCAP files and export DLT_RAW captures that desktop Wireshark can open.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-code">APP</span>
+            <h3>App compatibility bypass</h3>
+            <p>Exclude apps that do not behave correctly through local VPN inspection while capture continues for compatible apps.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-code">LOC</span>
+            <h3>Privacy-first posture</h3>
+            <p>No advertising, analytics, or cloud packet upload. Inspection stays local to the device.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="workflow">
+      <div class="shell workflow-layout">
+        <div class="section-heading compact reveal">
+          <span class="kicker">HOW IT WORKS</span>
+          <h2>Three steps. No root shell.</h2>
+          <p>PocketShark uses Android's approved local VPN path to observe traffic from the phone while keeping the workflow understandable.</p>
+        </div>
+        <ol class="workflow-list">
+          <li class="reveal"><span>01</span><div><h3>Start capture</h3><p>Approve Android's standard VPN consent screen and start a local capture session.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>Inspect traffic</h3><p>Filter by protocol, endpoint, port, or direction and drill into packet-level details.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Review or export</h3><p>Use built-in statistics or export a PCAP for deeper analysis in desktop Wireshark.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="boundaries">
+      <div class="shell boundaries-grid">
+        <div class="section-heading compact reveal">
+          <span class="kicker">CLEAR AND HONEST LIMITS</span>
+          <h2>Android boundaries, explained.</h2>
+          <p>PocketShark is intentionally transparent about what an ordinary Android app can and cannot inspect.</p>
+        </div>
+        <div class="boundary-panel reveal">
+          <div class="boundary-item"><span>01</span><p><strong>Phone traffic only.</strong> PocketShark does not provide laptop-style promiscuous Wi-Fi capture of every device on the network.</p></div>
+          <div class="boundary-item"><span>02</span><p><strong>Live IPv4.</strong> In v0.2.0, IPv6 bypasses PocketShark and continues normally.</p></div>
+          <div class="boundary-item"><span>03</span><p><strong>Encryption stays encryption.</strong> TLS and QUIC traffic stays encrypted; PocketShark does not decrypt protected sessions.</p></div>
+          <div class="boundary-item"><span>04</span><p><strong>One VPN at a time.</strong> Android permits one VPN service per user/profile, so starting capture disconnects another active VPN.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-section">
+      <div class="shell safety-card reveal">
+        <div class="safety-copy">
+          <span class="kicker">OBSERVATION, NOT ATTACK</span>
+          <h2>Built to inspect — not interfere.</h2>
+          <p><strong>No packet injection</strong>, spoofing, or traffic modification. Use PocketShark only with owned or authorised devices, networks, and captures.</p>
+        </div>
+        <div class="safety-badges" aria-label="Safety characteristics">
+          <span>NO INJECTION</span><span>NO SPOOFING</span><span>NO CLOUD UPLOAD</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="shell final-card reveal">
+        <img src="assets/pocketshark-mark.svg" alt="PocketShark logo" width="74" height="74">
+        <div>
+          <span class="kicker">POCKETSHARK ANDROID v0.2.0</span>
+          <h2>Take a closer look at your phone's traffic.</h2>
+          <p>Read the source, try a release, and send feedback through GitHub.</p>
+        </div>
+        <div class="final-actions">
+          <a class="button button-primary" href="https://github.com/Black7i77/PocketShark-Android/releases" target="_blank" rel="noreferrer">Get APK</a>
+          <a class="button button-secondary" href="https://github.com/Black7i77/PocketShark-Android/issues" target="_blank" rel="noreferrer">Give feedback</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top"><img src="assets/pocketshark-mark.svg" alt="" width="34" height="34"><span>Pocket<span class="brand-accent">Shark</span></span></a>
+        <p>Rootless Android network inspection and packet analysis.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Black7i77/PocketShark-Android" target="_blank" rel="noreferrer">Source</a>
+        <a href="https://github.com/Black7i77/PocketShark-Android/releases" target="_blank" rel="noreferrer">Releases</a>
+        <a href="https://github.com/Black7i77/PocketShark-Android/issues" target="_blank" rel="noreferrer">Issues</a>
+        <a href="https://github.com/Black7i77/PocketShark-Android/blob/main/PRIVACY_POLICY.md" target="_blank" rel="noreferrer">Privacy</a>
+        <a href="https://github.com/Black7i77/PocketShark-Android/blob/main/LICENSE" target="_blank" rel="noreferrer">License</a>
+      </div>
+    </div>
+    <div class="shell footer-bottom"><span>© <span data-year></span> PocketShark</span><span>Local by design.</span></div>
+  </footer>
+</body>
+</html>
